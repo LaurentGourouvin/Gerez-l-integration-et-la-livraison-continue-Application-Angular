@@ -1,0 +1,9 @@
+services:
+  olympic-game-start:
+    container_name: olympic-game-start
+    image: olympic-game-start
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "80:80"

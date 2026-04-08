@@ -1,0 +1,7 @@
+*.md
+node_modules/
+.angular
+.vscode
+k8s
+reports
+dist
