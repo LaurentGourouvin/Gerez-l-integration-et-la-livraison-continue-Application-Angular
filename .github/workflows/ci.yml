@@ -21,16 +21,6 @@ jobs:
         with:
           name: test-results
           path: test-results/
-
-      # Test
-      - name: Report test results
-        uses: dorny/test-reporter@v1
-        if: always()
-        with:
-          name: Test Results
-          path: test-results/reports/*.xml
-          reporter: java-junit
-
   build:
     name: build-docker-image
     runs-on: ubuntu-latest
