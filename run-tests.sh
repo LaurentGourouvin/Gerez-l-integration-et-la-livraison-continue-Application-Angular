@@ -7,7 +7,7 @@ if [ "$js" ]; then
     echo "Création du dossier 'test-results/'"
 
     mkdir -p test-results
-
+    npm ci
     npm test -- --watch=false
     testResult=$?
 
