@@ -22,6 +22,7 @@ COPY nginx/nginx.conf /etc/nginx/nginx.conf
 # Use nginx user to avoid running as root
 USER nginx
 
+# info
 EXPOSE 80
 
 # Force nginx to use my config and run in the foreground
