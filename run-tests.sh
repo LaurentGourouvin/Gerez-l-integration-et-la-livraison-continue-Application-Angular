@@ -25,7 +25,7 @@ if [ "$java" ]; then
     ./gradlew clean test
     testResult=$?
 
-    cp -r ./build/reports ./test-results
+    cp -r ./build/test-results/test ./test-results
     exit $testResult
 fi
 
